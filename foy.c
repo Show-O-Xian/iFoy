@@ -15,13 +15,18 @@ int main(){
 
   fgets(str1, 64, stdin);
 
-  printf("%s", strstr(str1, "まる"));
+  //printf("%p", strstr(str1, "まる"));
 
-  if(strstr(str1, "まる") != NULL){   
+  if(strstr(str1, "maru") != NULL){   
 
     if(rand() % 2 ==1){
+      int i;
+      for(char *p = &str1[0], i = 0; p < strstr(str1, "maru"); p++, i++){
+        p = &str1[i];
+        printf("%c", *p);
+      }
 
-      printf("strstr = %s\n", strstr(str1, "まる"));
+     // printf("strstr = %p\n", strstr(str1, "まる"));
       printf("まーるかいて...\n");
 
 

@@ -12,6 +12,7 @@ int main(){
 
   printf("文字列を入力しろ！ポッター！！---");
 
+
   fgets(str1, 64, stdin);
 
   printf("%s", strstr(str1, "まる"));

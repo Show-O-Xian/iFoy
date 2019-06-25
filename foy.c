@@ -15,7 +15,6 @@ int main(){
 
   fgets(str1, 64, stdin);
 
-  //printf("%p", strstr(str1, "まる"));
 
   if(strstr(str1, "まる") != NULL){   
 

@@ -17,11 +17,11 @@ int main(){
 
   //printf("%p", strstr(str1, "まる"));
 
-  if(strstr(str1, "maru") != NULL){   
+  if(strstr(str1, "まる") != NULL){   
 
     if(rand() % 2 ==1){
       int i;
-      for(char *p = &str1[0], i = 0; p < strstr(str1, "maru"); p++, i++){
+      for(char *p = &str1[0], i = 0; p < strstr(str1, "まる"); p++, i++){
         p = &str1[i];
         printf("%c", *p);
       }

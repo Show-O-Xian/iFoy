@@ -96,6 +96,12 @@ int main(){
    printf("                      `  ` `   .d9!`                            jmc                       `   .wm{\n");
    printf("                             .d9=   `                           (t!                           .mm}  `\n");
     }else{
+      int i;
+      for(char *p = &str1[0], i = 0; p < strstr(str1, "まる"); p++, i++){
+      p = &str1[i];
+      printf("%c", *p);
+    }
+
       printf("まーるかいて...\n");
 
 
